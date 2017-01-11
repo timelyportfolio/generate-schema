@@ -7,7 +7,7 @@ ct$source( './src/json_schema.js' )
 
 sch <- ct$get(
   sprintf(
-    'schemaJson("%s",%s)'
+    'schemaJson("%s", %s)'
     ,'mtcars_spec'
     ,jsonlite::toJSON(mtcars,dataframe="rows",auto_unbox=T)
   )
